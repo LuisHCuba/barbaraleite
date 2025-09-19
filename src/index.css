@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #151515;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.2;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-[#25d366] to-[#20b358] hover:from-[#20b358] hover:to-[#1da851] text-white font-semibold py-4 px-8 rounded-xl text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply bg-gradient-to-r from-[#25d366] to-[#20b358] hover:from-[#20b358] hover:to-[#1da851] text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
+  }
+  
+  .gradient-text {
+    @apply text-[#2e4773];
+  }
+  
+  .section-padding {
+    @apply py-20 px-6;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .backdrop-blur-glass {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .brand-bg {
+    background-color: #f1ece8;
+  }
+  
+  .brand-button {
+    background-color: #b5888b;
+  }
+  
+  .brand-text-primary {
+    color: #2e4773;
+  }
+  
+  .brand-text-secondary {
+    color: #151515;
+  }
+  
+  .brand-shadow {
+    box-shadow: 0 4px 20px rgba(181, 136, 139, 0.15);
+  }
+}
