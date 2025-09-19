@@ -336,7 +336,7 @@ const LandingPage: React.FC = () => {
               <h3 className="text-2xl font-bold text-[#2e4773] mb-4">
                 <CheckCircle className="inline mr-3" size={28} />
                 Se você se identificou com pelo menos 3 desses cenários...
-              </h3>
+            </h3>
               <p className="text-lg text-[#151515] mb-6 leading-relaxed">
                 É hora de descobrir seu perfil comportamental e transformar esses desafios em oportunidades de crescimento
             </p>
@@ -507,7 +507,7 @@ const LandingPage: React.FC = () => {
                 {/* Imagem de segurança */}
                 <div className="flex justify-center">
                   <img 
-                    src="/dist/assets/compra-segura.webp" 
+                    src="/compra-segura.webp" 
                     alt="Compra Segura"
                     className="max-w-full h-auto opacity-80"
                   />
@@ -554,7 +554,7 @@ const LandingPage: React.FC = () => {
                 {/* Imagem de segurança */}
                 <div className="flex justify-center">
                   <img 
-                    src="/dist/assets/compra-segura.webp" 
+                    src="/compra-segura.webp" 
                     alt="Compra Segura"
                     className="max-w-full h-auto opacity-80"
                   />
@@ -590,8 +590,8 @@ const LandingPage: React.FC = () => {
                 <div className="relative mb-6">
                   <div className="absolute top-[-8px] left-[-8px] text-4xl text-[#8e44ad] opacity-20">"</div>
                   <p className="text-gray-700 leading-relaxed text-base italic pl-6">
-                    {testimonial.text}
-                  </p>
+                  {testimonial.text}
+                </p>
                 </div>
                 
                 <div className="flex items-center justify-end">
@@ -622,7 +622,7 @@ const LandingPage: React.FC = () => {
                 {/* Imagem Instagram - Retangular Horizontal */}
                 <div className="relative">
                   <img 
-                    src="/dist/assets/instagram_barabara_leite.webp" 
+                    src="/instagram_barabara_leite.webp" 
                     alt="Bárbara Leite - Instagram @soubarbaraleite"
                     className="w-full max-w-xl mx-auto rounded-2xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
                     style={{ aspectRatio: '1195/377' }}
@@ -640,7 +640,7 @@ const LandingPage: React.FC = () => {
                 {/* Imagem TikTok - Quadrada */}
                 <div className="relative flex justify-center">
                   <img 
-                    src="/dist/assets/tiktok_barabara_leite.webp" 
+                    src="/tiktok_barabara_leite.webp" 
                     alt="Bárbara Leite - TikTok"
                     className="w-64 h-64 rounded-2xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />
