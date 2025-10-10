@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useLanguage } from './LanguageProvider';
 
 const Header: React.FC = () => {
@@ -17,8 +17,8 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="bg-gradient-to-br from-[#b5888b] to-[#a67d80] p-3 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300">
-              <Heart className="text-white" size={28} />
+            <div className="bg-gradient-to-br from-[#b5888b] to-[#a67d80] w-12 h-12 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 flex items-center justify-center">
+              <span className="text-white text-4xl font-serif italic font-bold" style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}>B</span>
             </div>
             <div>
               <h1 className="text-2xl font-bold text-[#2e4773] group-hover:text-[#b5888b] transition-colors duration-300">

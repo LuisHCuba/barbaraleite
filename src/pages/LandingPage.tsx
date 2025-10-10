@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ContactFormPopup from '../components/ContactFormPopup';
+import Header from '../components/Header';
 import { Clock, CheckCircle, Lock, Star, Award, Key, Lightbulb, Frown, Zap, Smartphone, AlertTriangle, Target, HeartCrack, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const LandingPage: React.FC = () => {
@@ -202,6 +203,8 @@ const LandingPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#f1ece8] overflow-x-hidden">
+      <Header />
+      
       {/* Hero Section */}
       <section className="relative min-h-[60vh] bg-gradient-to-br from-[#f1ece8] to-[#e8ddd7] overflow-hidden">
         {/* Background Image */}
@@ -213,11 +216,11 @@ const LandingPage: React.FC = () => {
           />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-[50vh]">
+        <div className="relative max-w-7xl mx-auto px-6 py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
             {/* Coluna do Conteúdo */}
-            <div className="text-center lg:text-left space-y-8 order-2 lg:order-1">
+            <div className="text-center lg:text-left space-y-6 order-2 lg:order-1 max-w-xl">
               {/* Badge de Credibilidade */}
               <div className="inline-flex items-center bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-[#b5888b]/20">
                 <Star className="text-[#b5888b] mr-2" size={20} />
@@ -225,20 +228,19 @@ const LandingPage: React.FC = () => {
               </div>
 
               {/* Título Principal */}
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#2e4773] leading-tight">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#2e4773] leading-tight mt-4">
                 Equilibre <span className="bg-gradient-to-r from-[#b5888b] to-[#a67d80] bg-clip-text text-transparent">Carreira</span> e <span className="bg-gradient-to-r from-[#b5888b] to-[#a67d80] bg-clip-text text-transparent">Maternidade</span>
                 <br />
                 <span className="text-xl md:text-2xl lg:text-3xl text-[#2e4773]">Sem Culpa</span>
               </h1>
 
               {/* Subtítulo */}
-              <p className="text-base md:text-lg text-[#151515] leading-relaxed font-light">
+              <p className="text-base md:text-lg text-[#151515] leading-relaxed font-light mt-4">
                 Descubra seu perfil comportamental único e crie uma rotina que <strong className="text-[#2e4773]">fortalece vínculos familiares</strong> enquanto <strong className="text-[#2e4773]">acelera seu crescimento profissional</strong>
               </p>
 
-
               {/* CTA Principal */}
-              <div className="space-y-4">
+              <div className="space-y-4 mt-6">
                 <button 
                   onClick={() => setIsContactFormOpen(true)}
                   className="group relative bg-gradient-to-r from-[#25d366] to-[#20b358] hover:from-[#20b358] hover:to-[#1da851] text-white font-bold py-5 px-10 rounded-2xl text-xl transition-all duration-300 shadow-2xl hover:shadow-3xl hover:-translate-y-2 transform active:scale-95 w-full lg:w-auto"
@@ -264,7 +266,7 @@ const LandingPage: React.FC = () => {
         </div>
         
         {/* Cartões de Benefícios - DENTRO da seção hero */}
-        <div className="relative max-w-6xl mx-auto px-6 mt-16 pb-8 z-10">
+        <div className="relative max-w-6xl mx-auto px-6 mt-10 pb-8 z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             
             <div className="bg-[#b5888b]/90 backdrop-blur-sm p-6 rounded-xl text-center text-white shadow-xl">
